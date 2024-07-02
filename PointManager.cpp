@@ -15,9 +15,10 @@ Point::Point(const Point& obj)
 Point::Point(const sf::Vector2f& pos, float radius, const sf::Color& color)
 {
 	position = pos;
+	pointShape.setRadius(radius);
+	pointShape.setOrigin(sf::Vector2f{ radius, radius });
 	pointShape.setPosition(position);
 	pointShape.setFillColor(color);
-	pointShape.setRadius(radius);
 }
 
 PointManager::PointManager()
@@ -50,20 +51,9 @@ PointManager::~PointManager()
 	v_points.clear();
 }
 
-const size_t PointManager::getClosestPointID(const sf::Vector2f& pos) const
+const std::vector<Point*>& PointManager::getPoints() const
 {
-	size_t id = 0;
-	float min_distance = 9999999999.f;
-
-	for (size_t i = 0; i < v_points.size(); ++i) {
-		const float distance = util::distance(v_points[i]->position, pos);
-		if (distance < min_distance) {
-			min_distance = distance;
-			id = i;
-		}
-	}
-
-	return id;
+	return v_points;
 }
 
 void PointManager::reset()

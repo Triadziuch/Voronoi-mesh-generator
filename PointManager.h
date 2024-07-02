@@ -38,7 +38,7 @@ public:
 	PointManager(const sf::Vector2u& window_size = sf::Vector2u{ 1920u, 1080u }, const size_t & count = defaultPointCount, float radius = defaultPointRadius, const sf::Color & color = sf::Color::Black);
 	~PointManager();
 
-	const size_t getClosestPointID(const sf::Vector2f& pos) const;
+	const std::vector<Point*>& getPoints() const;
 	void reset();
 	void render(sf::RenderWindow &window);
 };
