@@ -24,6 +24,9 @@ public:
 	static constexpr float defaultPointRadius = 2.5f;
 	const sf::Color defaultPointColor{ sf::Color::Black };
 
+	float pointRadius{};
+	sf::Color pointColor{};
+
 private:
 	// Private variables
 	size_t pointCount;
@@ -41,6 +44,11 @@ public:
 	const std::vector<Point*>& getPoints() const;
 	void reset();
 	void render(sf::RenderWindow &window);
+	void addPoint(sf::Vector2f position);
+	void removePoint(sf::Vector2f position);
+	
+	PointManager operator++(void);
+	PointManager operator--(void);
 };
 
 namespace util {

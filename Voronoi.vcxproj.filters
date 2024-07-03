@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="PointManager.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MovementManager\easeFunctions.cpp">
+      <Filter>MovementManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovementManager\MovementContainer.cpp">
+      <Filter>MovementManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovementManager\MovementManager.cpp">
+      <Filter>MovementManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovementManager\RoutineContainer.cpp">
+      <Filter>MovementManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovementManager\SidePanel.cpp">
+      <Filter>MovementManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovementManager\transformationInfo.cpp">
+      <Filter>MovementManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovementManager\TransformationRoutine.cpp">
+      <Filter>MovementManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovementManager\VertexArray2.cpp">
+      <Filter>MovementManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PointManager.h" />
+    <ClInclude Include="src\MovementManager\easeFunctions.h">
+      <Filter>MovementManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MovementManager\MovementContainer.h">
+      <Filter>MovementManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MovementManager\MovementManager.h">
+      <Filter>MovementManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MovementManager\RoutineContainer.h">
+      <Filter>MovementManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MovementManager\SidePanel.h">
+      <Filter>MovementManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MovementManager\transformationInfo.h">
+      <Filter>MovementManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MovementManager\TransformationRoutine.h">
+      <Filter>MovementManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MovementManager\VertexArray2.h">
+      <Filter>MovementManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MovementManager">
+      <UniqueIdentifier>{3616a312-fc49-4cef-b432-ca745d7abaa5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
