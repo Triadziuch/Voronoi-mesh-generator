@@ -4,6 +4,7 @@ void Application::initWindow()
 {
     sf::ContextSettings settings{ depth, stencil, antialiasing, major, minor, attributes, sRgb };
     window = new sf::RenderWindow{ sf::VideoMode{ window_size_x, window_size_y }, "Voronoi diagram", 7U, settings };
+    window->setMouseCursorVisible(false);
 }
 
 void Application::initPointManager()
@@ -26,7 +27,6 @@ void Application::initVoronoiMesh()
 Application::Application()
 {
     srand(static_cast<unsigned int>(NULL));
-
     initWindow();
     initPointManager();
     initGUI();
@@ -181,4 +181,6 @@ void Application::render()
 
     if (is_gui_visible)
         gui->render();
+
+    window->display();
 }

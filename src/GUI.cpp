@@ -69,6 +69,4 @@ void GUI::render()
         window->draw(*text);
 
     side_panel->draw(*window);
-
-    window->display();
 }
