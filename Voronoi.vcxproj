@@ -136,7 +136,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="PointManager.cpp" />
+    <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\Bisector.cpp" />
+    <ClCompile Include="src\Cell.cpp" />
+    <ClCompile Include="src\Edge.cpp" />
+    <ClCompile Include="src\GUI.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MovementManager\easeFunctions.cpp" />
     <ClCompile Include="src\MovementManager\MovementContainer.cpp" />
@@ -146,9 +150,15 @@
     <ClCompile Include="src\MovementManager\transformationInfo.cpp" />
     <ClCompile Include="src\MovementManager\TransformationRoutine.cpp" />
     <ClCompile Include="src\MovementManager\VertexArray2.cpp" />
+    <ClCompile Include="src\PointManager.cpp" />
+    <ClCompile Include="src\VoronoiMesh.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PointManager.h" />
+    <ClInclude Include="src\Application.h" />
+    <ClInclude Include="src\Bisector.h" />
+    <ClInclude Include="src\Cell.h" />
+    <ClInclude Include="src\Edge.h" />
+    <ClInclude Include="src\GUI.h" />
     <ClInclude Include="src\MovementManager\easeFunctions.h" />
     <ClInclude Include="src\MovementManager\MovementContainer.h" />
     <ClInclude Include="src\MovementManager\MovementManager.h" />
@@ -157,6 +167,8 @@
     <ClInclude Include="src\MovementManager\transformationInfo.h" />
     <ClInclude Include="src\MovementManager\TransformationRoutine.h" />
     <ClInclude Include="src\MovementManager\VertexArray2.h" />
+    <ClInclude Include="src\PointManager.h" />
+    <ClInclude Include="src\VoronoiMesh.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
